@@ -2,7 +2,6 @@
 var canvas = document.getElementById("bg");
 ctx = canvas.getContext('2d');
 
-console.log("init");
 
 // Setting the width and height of the canvas
 canvas.width = window.innerWidth;
@@ -48,7 +47,6 @@ function draw() {
 
 // OnResize
 window.addEventListener('resize', function(event){
-    console.log("resize");
     setSizes();
 });
 
