@@ -37,6 +37,9 @@ function draw() {
     for (var i = 0; i < drops.length; i++) {
         var text = letters[Math.floor(Math.random() * letters.length)];
         ctx.fillStyle = '#0f0';
+        // if(Math.random() > 0.3){
+        //     ctx.fillStyle = '#0015ff';
+        // }
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
         drops[i]++;
         if (drops[i] * fontSize > canvas.height/2.5 && Math.random() > .95) {
